@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14010839-4a6a-417c-bde6-7ee68ffa79d2" name="Changes" comment="" />
+    <list default="true" id="14010839-4a6a-417c-bde6-7ee68ffa79d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/res/drawable/launch_screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/res/layout/launch_screen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/constants/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/constants/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/navigations/appStack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Details/Details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Details/Details.style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Home/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Home/Home.style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/java/com/movielibrary/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/java/com/movielibrary/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/java/com/movielibrary/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/java/com/movielibrary/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/Router.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +46,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JKVCEj8zF70EsdcNAr6nUkkrwL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,6 +67,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\android\app\src\main\res\drawable" />
+      <recent name="C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\src\assets\images" />
+      <recent name="C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\src\screens" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671826631852</updated>
-      <workItem from="1671826632819" duration="2846000" />
+      <workItem from="1671826632819" duration="9336000" />
     </task>
     <servers />
   </component>
