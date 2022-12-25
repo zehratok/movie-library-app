@@ -5,27 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14010839-4a6a-417c-bde6-7ee68ffa79d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/res/drawable/launch_screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/res/layout/launch_screen.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/constants/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/constants/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/navigations/appStack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Details/Details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Details/Details.style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Home/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Home/Home.style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/AppLayout/AppLayout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/AppLayout/AppLayout.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/java/com/movielibrary/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/java/com/movielibrary/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/java/com/movielibrary/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/java/com/movielibrary/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieLibrary/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/babel.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieLibrary/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/navigations/appStack.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/navigations/appStack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/screens/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/screens/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +43,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -83,6 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671826631852</updated>
       <workItem from="1671826632819" duration="9336000" />
+      <workItem from="1671974203626" duration="8405000" />
     </task>
     <servers />
   </component>
