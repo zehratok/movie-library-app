@@ -1,29 +1,29 @@
-import { StyleSheet } from "react-native";
-import { COLORS, FONTS, SIZES } from "../../constants/theme";
+import {StyleSheet} from 'react-native';
+import {COLORS, FONTS, SIZES} from 'constants/theme';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
+    alignItems: 'center',
   },
   scrollContainer: {
     flex: 1,
     width: SIZES.width,
     marginTop: SIZES.padding,
-    alignContent: "center",
+    alignContent: 'center',
   },
   image: {
-    alignSelf: "center",
+    alignSelf: 'center',
     width: SIZES.width * 0.85,
     height: SIZES.height * 0.5,
     borderRadius: SIZES.radius * 1.25,
   },
   titleContainer: {
-    alignSelf: "center",
+    alignSelf: 'center',
     width: SIZES.width * 0.85,
-    flexDirection: "row",
+    flexDirection: 'row',
     marginTop: SIZES.margin * 2,
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
   },
   title: {
     ...FONTS.h3,
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
   },
   ratingContainer: {
     width: SIZES.width * 0.25,
-    flexDirection: "row",
-    justifyContent: "flex-end",
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
   },
   ratingIcon: {
     color: COLORS.yellow,
@@ -43,17 +43,17 @@ const styles = StyleSheet.create({
     fontSize: SIZES.body2,
     color: COLORS.white2,
     marginLeft: SIZES.margin / 2,
-    textAlign: "center",
+    textAlign: 'center',
   },
   plotText: {
-    alignSelf: "center",
+    alignSelf: 'center',
     width: SIZES.width * 0.85,
     ...FONTS.body3,
     color: COLORS.white2,
     marginTop: SIZES.margin,
   },
   infoContainer: {
-    alignSelf: "center",
+    alignSelf: 'center',
     width: SIZES.width * 0.85,
     marginTop: SIZES.margin,
   },
@@ -64,19 +64,19 @@ const styles = StyleSheet.create({
   actorText: {
     ...FONTS.body3,
     color: COLORS.black,
-    alignSelf: "flex-start",
+    alignSelf: 'flex-start',
   },
   tabText: {
     ...FONTS.body4,
     color: COLORS.black2,
-    alignSelf: "center",
+    alignSelf: 'center',
   },
   subText: {
     marginTop: SIZES.margin,
     width: SIZES.width * 0.85,
     ...FONTS.h3,
     color: COLORS.yellow,
-    alignSelf: "center",
+    alignSelf: 'center',
   },
   movieListContainer: {
     paddingLeft: SIZES.width * 0.085,
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   },
   noMoviesContainer: {
     width: SIZES.width * 0.85,
-    alignSelf: "center",
+    alignSelf: 'center',
   },
   noMoviesText: {
     ...FONTS.body3,
@@ -102,14 +102,13 @@ const styles = StyleSheet.create({
   errorContainer: {
     width: SIZES.width * 0.85,
     height: SIZES.height * 0.6,
-    justifyContent: "center",
-    alignSelf: "center"
+    justifyContent: 'center',
+    alignSelf: 'center',
   },
   errorText: {
     color: COLORS.lightBrown,
     ...FONTS.h3,
-    textAlign: "center",
+    textAlign: 'center',
   },
-
 });
 export default styles;

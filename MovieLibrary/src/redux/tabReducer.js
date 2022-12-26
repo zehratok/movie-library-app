@@ -1,6 +1,6 @@
 export const initialState = {
   selectedTab: 'home',
-}
+};
 
 const tabReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -8,9 +8,9 @@ const tabReducer = (state = initialState, action) => {
       return {
         ...state,
         selectedTab: action.payload,
-      }
+      };
     default:
-      return state
+      return state;
   }
-}
-export default tabReducer
+};
+export default tabReducer;
