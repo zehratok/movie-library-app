@@ -27,8 +27,9 @@ export default Header;
 const styles = StyleSheet.create({
   container: {
     width: SIZES.width * 0.85,
-    height: SIZES.height * 0.1,
+    height: SIZES.height * 0.075,
     alignItems: 'center',
+    justifyContent: 'center',
     marginTop: SIZES.margin * 3,
   },
   leftButton: {
@@ -43,9 +44,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
+    width: SIZES.width * 0.55,
+    textAlign: 'center',
     color: COLORS.white2,
     ...FONTS.h2,
-    marginTop: SIZES.margin,
   },
   rightButton: {
     position: 'absolute',

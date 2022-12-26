@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {Text, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import {Home} from 'screens';
+import {Home, Reviewed} from 'screens';
 import {TabButton} from 'components';
 import {COLORS} from 'constants/theme';
 import LinearGradient from 'react-native-linear-gradient';
@@ -20,6 +20,7 @@ const AppLayout = () => {
   useEffect(() => {
     renderTopContainer();
     renderFooterContainer();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedTab]);
 
   const renderTopContainer = () => {
@@ -27,7 +28,7 @@ const AppLayout = () => {
       return <Home />;
     }
     if (selectedTab === tabItems.calendar) {
-      return <Text style={styles.text}>Calendar</Text>;
+      return <Reviewed />;
     }
     if (selectedTab === tabItems.flame) {
       return <Text style={styles.text}>Flame</Text>;
