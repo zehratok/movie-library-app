@@ -1,19 +1,22 @@
-import React, {useEffect, useState} from 'react';
-import {Text, View} from 'react-native';
-import {Home} from 'screens';
-import styles from './AppLayout.style';
-import {TabButton} from 'components';
-import {COLORS} from 'constants/theme';
-import LinearGradient from 'react-native-linear-gradient';
+import React, { useEffect } from "react";
+import { Text, View } from "react-native";
+import { useDispatch, useSelector } from "react-redux";
+import { Home } from "screens";
+import { TabButton } from "components";
+import { COLORS } from "constants/theme";
+import LinearGradient from "react-native-linear-gradient";
+import styles from "./AppLayout.style";
 
 const AppLayout = () => {
   const tabItems = {
-    home: 'home',
-    calendar: 'calendar',
-    flame: 'flame',
-    person: 'person',
+    home: "home",
+    calendar: "calendar",
+    flame: "flame",
+    person: "person",
   };
-  const [selectedTab, setSelectedTab] = useState(tabItems.home);
+  const selectedTab = useSelector((state) => state.tabReducer.selectedTab);
+  const dispatch = useDispatch();
+
   useEffect(() => {
     renderTopContainer();
     renderFooterContainer();
@@ -33,6 +36,10 @@ const AppLayout = () => {
       return <Text style={styles.text}>Person</Text>;
     }
   };
+
+  const setSelectedTab = (tab) => {
+    dispatch({ type: "SELECT_TAB", payload: tab });
+  };
   const renderFooterContainer = () => {
     return (
       <View style={styles.footerContainer}>
@@ -42,7 +49,7 @@ const AppLayout = () => {
               key={item}
               iconName={item}
               isSelected={selectedTab === tabItems[item]}
-              onPress={() => setSelectedTab(tabItems[item])}
+              onPress={() => setSelectedTab(item)}
             />
           );
         })}
