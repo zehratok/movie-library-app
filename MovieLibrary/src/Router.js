@@ -4,7 +4,7 @@ import AppStack from 'navigations/appStack';
 import {Provider} from 'react-redux';
 import store from 'redux/store';
 import SplashScreen from 'react-native-splash-screen';
-
+import StatusBar from 'components/StatusBar';
 const Router = () => {
   useEffect(() => {
     SplashScreen.hide();
@@ -12,7 +12,9 @@ const Router = () => {
 
   return (
     <Provider store={store}>
+      <StatusBar />
       <NavigationContainer>
+
         <AppStack />
       </NavigationContainer>
     </Provider>
