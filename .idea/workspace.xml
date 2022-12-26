@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14010839-4a6a-417c-bde6-7ee68ffa79d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/AppLayout/AppLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/AppLayout/AppLayout.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieLibrary/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieLibrary/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/constants/fakeData.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/constants/fakeData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/constants/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/constants/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/jsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/jsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieLibrary/src/navigations/appStack.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/navigations/appStack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/screens/Details/Details.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Details/Details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/screens/Details/Details.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Details/Details.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieLibrary/src/screens/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieLibrary/src/screens/Home/Home.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/Home/Home.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieLibrary/src/screens/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/MovieLibrary/src/screens/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +37,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2JKVCEj8zF70EsdcNAr6nUkkrwL" />
   <component name="ProjectLevelVcsManager">
@@ -59,6 +67,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\src" />
       <recent name="C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\android\app\src\main\res\drawable" />
       <recent name="C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\src\assets\images" />
       <recent name="C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\src\screens" />
@@ -73,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671826631852</updated>
       <workItem from="1671826632819" duration="9336000" />
-      <workItem from="1671974203626" duration="8405000" />
+      <workItem from="1671974203626" duration="12458000" />
     </task>
     <servers />
   </component>
