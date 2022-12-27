@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from "react";
+import React, {memo, useEffect, useState} from 'react';
 import {
   FlatList,
   Image,
@@ -7,22 +7,23 @@ import {
   Text,
   TouchableOpacity,
   View,
-} from "react-native";
-import { useDispatch, useSelector } from "react-redux";
-import { apiUrl } from "constants/api";
-import { COLORS } from "constants/theme";
-import { Header, Loading } from "components";
-import axios from "axios";
-import Icon from "react-native-vector-icons/Ionicons";
-import Icon2 from "react-native-vector-icons/Entypo";
-import LinearGradient from "react-native-linear-gradient";
-import styles from "./Details.style";
+} from 'react-native';
+import {useDispatch, useSelector} from 'react-redux';
+import {apiUrl} from 'constants/api';
+import {COLORS} from 'constants/theme';
+import {Header, Loading} from 'components';
+import axios from 'axios';
+import Icon from 'react-native-vector-icons/Ionicons';
+import Icon2 from 'react-native-vector-icons/Entypo';
+import LinearGradient from 'react-native-linear-gradient';
+import styles from './Details.style';
 
-const Details = memo(({ navigation }) => {
-
+const Details = memo(({navigation}) => {
   const [movie, setMovie] = useState(null);
   const movieId = useSelector(state => state.movieIdReducer.movieId);
-  const shownMovies = useSelector(state => state.shownMoviesReducer.movies.reverse());
+  const shownMovies = useSelector(state =>
+    state.shownMoviesReducer.movies.reverse(),
+  );
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -37,7 +38,8 @@ const Details = memo(({ navigation }) => {
 
   const getDetails = async () => {
     setLoading(true);
-    await axios.get(`${apiUrl}i=${movieId}`)
+    await axios
+      .get(`${apiUrl}i=${movieId}`)
       .then(response => {
         return setMovie(response.data);
       })
@@ -52,18 +54,18 @@ const Details = memo(({ navigation }) => {
   const setShownMovies = () => {
     if (!error) {
       if (shownMovies.find(item => item.movieId === movieId)) {
-        dispatch({ type: "REMOVE_MOVIE", payload: movieId });
-        dispatch({ type: "ADD_SHOWN_MOVIE", payload: { movie, movieId } });
+        dispatch({type: 'REMOVE_MOVIE', payload: movieId});
+        dispatch({type: 'ADD_SHOWN_MOVIE', payload: {movie, movieId}});
       } else {
-        dispatch({ type: "ADD_SHOWN_MOVIE", payload: { movie, movieId } });
+        dispatch({type: 'ADD_SHOWN_MOVIE', payload: {movie, movieId}});
       }
     } else {
       return null;
     }
   };
   const handleGetDetailsShownMovie = id => {
-    dispatch({ type: "SET_ID", payload: id });
-    navigation.navigate("Details");
+    dispatch({type: 'SET_ID', payload: id});
+    navigation.navigate('Details');
   };
 
   const renderMovieDetails = () => {
@@ -76,13 +78,13 @@ const Details = memo(({ navigation }) => {
     } else {
       return (
         <>
-          {movie?.Poster === "N/A" ? (
+          {movie?.Poster === 'N/A' ? (
             <Image
-              source={require("../../assets/images/noPoster.png")}
+              source={require('assets/images/noPoster.png')}
               style={styles.image}
             />
           ) : (
-            <Image source={{ uri: movie?.Poster }} style={styles.image} />
+            <Image source={{uri: movie?.Poster}} style={styles.image} />
           )}
           <View style={styles.titleContainer}>
             <Text style={styles.title}>{movie?.Title}</Text>
@@ -92,7 +94,7 @@ const Details = memo(({ navigation }) => {
                   <Icon name="ios-star-half-sharp" style={styles.ratingIcon} />
                 ) : (
                   <Icon name="star" style={styles.ratingIcon} />
-                )}{" "}
+                )}{' '}
                 {movie?.imdbRating}
               </Text>
             </View>
@@ -102,11 +104,11 @@ const Details = memo(({ navigation }) => {
             <Text style={styles.directorText}>Director: {movie?.Director}</Text>
             <Text style={styles.actorText}>Actors: {movie?.Actors}</Text>
             <Text style={styles.tabText}>
-              {" "}
+              {' '}
               {movie?.Released}
               <Icon2 name="dot-single" size={20} />
               {movie?.Runtime} <Icon2 name="dot-single" size={20} />
-              {movie?.Country}{" "}
+              {movie?.Country}{' '}
             </Text>
           </View>
         </>
@@ -122,18 +124,18 @@ const Details = memo(({ navigation }) => {
           keyExtractor={item => item?.movieId}
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.movieListContainer}
-          renderItem={({ item }) => (
+          renderItem={({item}) => (
             <TouchableOpacity
               style={styles.movieItemContainer}
               onPress={() => handleGetDetailsShownMovie(item.movieId)}>
-              {item?.movie?.Poster === "N/A" ? (
+              {item?.movie?.Poster === 'N/A' ? (
                 <Image
-                  source={require("../../assets/images/noPoster.png")}
+                  source={require('assets/images/noPoster.png')}
                   style={styles.movieImage}
                 />
               ) : (
                 <Image
-                  source={{ uri: item?.movie?.Poster }}
+                  source={{uri: item?.movie?.Poster}}
                   style={styles.movieImage}
                 />
               )}

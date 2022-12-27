@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   selectedIcon: {
-    color: COLORS.blue,
+    color: COLORS.yellow2,
     fontSize: 30,
   },
   icon: {

@@ -12,7 +12,7 @@ export const categories = [
 
 export const userProfile = {
   name: 'Zehra Tok',
-  profile_image: require('../assets/images/profile.png'),
+  profile_image: require('assets/images/profile.png'),
 };
 
 const fakeData = {categories, userProfile};

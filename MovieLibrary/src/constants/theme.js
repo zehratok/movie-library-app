@@ -16,6 +16,7 @@ export const COLORS = {
   white2: '#FBFBFB',
   blue2: '#6835FE',
   yellow: '#F9BF1F',
+  yellow2: '#F8D458',
   transparent: 'transparent',
   transparentBlue: 'rgba(36, 10, 252, 0.5)',
   transparentWhite1: 'rgba(255, 255, 255, 0.1)',

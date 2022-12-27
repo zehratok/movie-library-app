@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   image: {
     alignSelf: 'center',
     width: SIZES.width * 0.85,
-    height: SIZES.height * 0.5,
+    height: SIZES.height * 0.55,
     borderRadius: SIZES.radius * 1.25,
   },
   titleContainer: {
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
     ...FONTS.body4,
     color: COLORS.black2,
     alignSelf: 'center',
+    marginBottom: SIZES.margin,
   },
   subText: {
     marginTop: SIZES.margin,

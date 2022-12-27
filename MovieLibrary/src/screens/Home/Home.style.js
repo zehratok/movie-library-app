@@ -102,9 +102,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginRight: SIZES.margin * 1.6,
   },
-  categoryText: {
+  categoryItemText: {
     ...FONTS.h4,
     color: COLORS.white,
+    paddingHorizontal: SIZES.margin,
+  },
+  categoryItemTextSelected: {
+    ...FONTS.h4,
+    color: COLORS.black,
     paddingHorizontal: SIZES.margin,
   },
   popularContainer: {

@@ -178,7 +178,7 @@ const Home = () => {
                 }}>
                 {item?.Poster === 'N/A' ? (
                   <Image
-                    source={require('../../assets/images/noPoster.png')}
+                    source={require('assets/images/noPoster.png')}
                     style={styles.searchResultImage}
                   />
                 ) : (
@@ -214,14 +214,21 @@ const Home = () => {
                 {
                   backgroundColor:
                     selectedCategory === item.id
-                      ? COLORS.blue
+                      ? COLORS.yellow2
                       : COLORS.darkGray,
                 },
               ]}
               onPress={() => {
                 setSelectedCategory(item.id);
               }}>
-              <Text style={styles.categoryText}> {item.name} </Text>
+              <Text
+                style={
+                  selectedCategory === item.id
+                    ? styles.categoryItemTextSelected
+                    : styles.categoryItemText
+                }>
+                {item.name}
+              </Text>
             </TouchableOpacity>
           )}
         />
@@ -247,7 +254,7 @@ const Home = () => {
               onPress={() => handleGetDetails(item.imdbID)}>
               {item?.Poster === 'N/A' ? (
                 <Image
-                  source={require('../../assets/images/noPoster.png')}
+                  source={require('assets/images/noPoster.png')}
                   style={styles.movieImage}
                 />
               ) : (

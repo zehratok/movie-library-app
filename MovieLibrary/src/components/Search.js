@@ -1,6 +1,6 @@
 import React, {memo, useState} from 'react';
 import {StyleSheet, View} from 'react-native';
-import {TextInput} from './index';
+import {TextInput} from 'components';
 
 const Search = memo(({onSearchEnter}) => {
   const [search, setSearch] = useState('');
