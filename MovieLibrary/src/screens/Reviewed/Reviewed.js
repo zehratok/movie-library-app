@@ -3,6 +3,7 @@ import {FlatList, Image, Text, TouchableOpacity, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useDispatch, useSelector} from 'react-redux';
 import {Header, Loading} from 'components';
+import {useNavigation} from '@react-navigation/native';
 import styles from './Reviewed.style';
 
 const Reviewed = () => {
@@ -12,6 +13,7 @@ const Reviewed = () => {
     state.shownMoviesReducer.movies.reverse(),
   );
   const dispatch = useDispatch();
+  const navigation = useNavigation();
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -21,18 +23,43 @@ const Reviewed = () => {
   const goBack = () => {
     dispatch({type: 'SELECT_TAB', payload: 'home'});
   };
+  const getDetails = id => {
+    dispatch({type: 'SET_ID', payload: id});
+    navigation.navigate('Details');
+  };
   const renderShownMovies = ({item}) => {
     return sort ? (
-      <TouchableOpacity style={styles.singleMovieContainer}>
-        <Image
-          source={{uri: item?.movie?.Poster}}
-          style={styles.singleMovieImage}
-        />
+      <TouchableOpacity
+        style={styles.singleMovieContainer}
+        onPress={() => getDetails(item?.movieId)}>
+        {item?.Poster === 'N/A' ? (
+          <Image
+            style={styles.singleMovieImage}
+            source={require('assets/images/noPoster.png')}
+          />
+        ) : (
+          <Image
+            source={{uri: item?.movie?.Poster}}
+            style={styles.singleMovieImage}
+          />
+        )}
         <Text style={styles.singleMovieTitle}>{item?.movie?.Title}</Text>
       </TouchableOpacity>
     ) : (
-      <TouchableOpacity style={styles.movieContainer}>
-        <Image source={{uri: item?.movie?.Poster}} style={styles.movieImage} />
+      <TouchableOpacity
+        style={styles.movieContainer}
+        onPress={() => getDetails(item?.movieId)}>
+        {item?.Poster === 'N/A' ? (
+          <Image
+            style={styles.movieImage}
+            source={require('assets/images/noPoster.png')}
+          />
+        ) : (
+          <Image
+            source={{uri: item?.movie?.Poster}}
+            style={styles.movieImage}
+          />
+        )}
         <Text style={styles.movieTitle}>{item?.movie?.Title}</Text>
       </TouchableOpacity>
     );
@@ -52,7 +79,7 @@ const Reviewed = () => {
         ) : shownMovies.length > 0 ? (
           <FlatList
             data={shownMovies}
-            keyExtractor={item => item.movie.imdbID}
+            keyExtractor={item => item?.movieId}
             showsVerticalScrollIndicator={false}
             columnWrapperStyle={{flexWrap: 'wrap'}}
             numColumns={shownMovies.length + 1}
