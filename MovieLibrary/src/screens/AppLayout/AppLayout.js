@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {Text, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import {Home, Reviewed} from 'screens';
+import {Home, Popular, Reviewed} from 'screens';
 import {TabButton} from 'components';
 import {COLORS} from 'constants/theme';
 import LinearGradient from 'react-native-linear-gradient';
@@ -31,7 +31,7 @@ const AppLayout = () => {
       return <Reviewed />;
     }
     if (selectedTab === tabItems.flame) {
-      return <Text style={styles.text}>Flame</Text>;
+      return <Popular />;
     }
     if (selectedTab === tabItems.person) {
       return <Text style={styles.text}>Person</Text>;
