@@ -155,6 +155,9 @@ const Home = () => {
       </View>
     ) : null;
   };
+  const seeAllPopular = () => {
+    dispatch({type: 'SELECT_TAB', payload: 'flame'});
+  };
   const renderSearchResult = () => {
     return (
       <View style={styles.searchResultContainer}>
@@ -240,7 +243,9 @@ const Home = () => {
       <View style={styles.popularContainer}>
         <View style={styles.subHeaderContainer}>
           <Text style={styles.subHeaderText}>Popular</Text>
-          <Text style={styles.subHeaderLink}>See All</Text>
+          <TouchableOpacity onPress={seeAllPopular}>
+            <Text style={styles.subHeaderLink}>See all</Text>
+          </TouchableOpacity>
         </View>
         <FlatList
           horizontal
