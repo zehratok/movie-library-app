@@ -5,7 +5,7 @@ This is a mobile application for searching, discovering and learning about movie
 
 ## 🎥 Features
 
-- 🔎 Search for movies by title, actor, or director
+- 🔎 Search for movies by title
 - 🎞️ View a list of popular movies
 - 🎬 View details for each movie, including plot summary, release date, cast and ratings
 - 🤝 Share movies with friends
