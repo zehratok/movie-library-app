@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Error: Unable to resolve module ./index.android from C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary/.: <br><br>None of these files exist:<br> &nbsp;* index.android(.native|.android.js|.native.js|.js|.android.jsx|.native.jsx|.jsx|.android.json|.native.json|.json|.android.ts|.native.ts|.ts|.android.tsx|.native.tsx|.tsx)<br> &nbsp;* index.android\index(.native|.android.js|.native.js|.js|.android.jsx|.native.jsx|.jsx|.android.json|.native.json|.json|.android.ts|.native.ts|.ts|.android.tsx|.native.tsx|.tsx)<br> &nbsp; &nbsp;at ModuleResolver.resolveDependency (C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:152:15)<br> &nbsp; &nbsp;at DependencyGraph.resolveDependency (C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\node_modules\metro\src\node-haste\DependencyGraph.js:264:43)<br> &nbsp; &nbsp;at C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\node_modules\metro\src\lib\transformHelpers.js:170:21<br> &nbsp; &nbsp;at Server._resolveRelativePath (C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\node_modules\metro\src\Server.js:1196:12)<br> &nbsp; &nbsp;at async Server.requestProcessor [as _processBundleRequest] (C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\node_modules\metro\src\Server.js:484:37)<br> &nbsp; &nbsp;at async Server._processRequest (C:\Users\zh\Documents\GitHub\movie-library-app\MovieLibrary\node_modules\metro\src\Server.js:435:9)</pre>
+</body>
+</html>
